@@ -22,3 +22,26 @@ filter/npm-debug.log*
 filter/yarn-debug.log*
 filter/yarn-error.log*
 filter/.idea
+
+# dependencies
+layouts/node_modules
+layouts/.pnp
+layouts/.pnp.js
+
+# testing
+layouts/coverage
+
+# production
+layouts/build
+
+# misc
+layouts/.DS_Store
+layouts/.env.local
+layouts/.env.development.local
+layouts/.env.test.local
+layouts/.env.production.local
+
+layouts/npm-debug.log*
+layouts/yarn-debug.log*
+layouts/yarn-error.log*
+layouts/.idea
