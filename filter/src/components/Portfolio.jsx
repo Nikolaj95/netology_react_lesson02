@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Portfolio (props) {
-    const { projects } = props;
+export default function Portfolio(props) {
+    const {projects} = props;
 
     const renderProjects = (projects) => {
         return projects.map((project, i) => {
             return (
                 <div className="project" key={`project-${project.category}-${i}`}>
-                    <img src={project.img} alt={`project-${project.category}-${i}`} />
+                    <img src={project.img} alt={`project-${project.category}-${i}`}/>
                 </div>
             );
         });
@@ -15,7 +15,7 @@ export default function Portfolio (props) {
 
     return (
         <div className="portfolio">
-                {renderProjects(projects)}
+            {renderProjects(projects)}
         </div>
     );
 };

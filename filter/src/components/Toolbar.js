@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-export default function Toolbar(props){
-        const { filters, selected, onSelectFilter } = props;
+export default function Toolbar(props) {
+    const {filters, selected, onSelectFilter} = props;
     const renderFilters = (filters) => {
         return filters.map((filter, i) => {
             const className = filter === selected ? "filter-selected" : "filter";
@@ -10,7 +10,7 @@ export default function Toolbar(props){
                 <button
                     className={className}
                     onClick={() => onSelectFilter(filter)}
-                    key={`filter-${i}`} >
+                    key={`filter-${i}`}>
                     {filter}
                 </button>
             );
